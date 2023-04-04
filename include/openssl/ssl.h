@@ -1991,7 +1991,7 @@ OPENSSL_EXPORT int SSL_set_session(SSL *ssl, SSL_SESSION *session);
 // SSL_DEFAULT_SESSION_AUTH_TIMEOUT is the default non-renewable lifetime, in
 // seconds, of a TLS 1.3 session. This is how long we are willing to trust the
 // signature in the initial handshake.
-#define SSL_DEFAULT_SESSION_AUTH_TIMEOUT (7 * 24 * 60 * 60)
+#define SSL_DEFAULT_SESSION_AUTH_TIMEOUT (60 * 24 * 60 * 60)
 
 // SSL_CTX_set_timeout sets the lifetime, in seconds, of TLS 1.2 (or earlier)
 // sessions created in |ctx| to |timeout|.
